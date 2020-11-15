@@ -20,3 +20,9 @@ Exercise 3/Exercise 3/task01/Debug/task01.exe.recipe
 *.tlog
 *.idb
 *.pdb
+test01/.vs/test01/v16/.suo
+*.exe
+*.ilk
+*.zip
+test01/task01/.vscode/c_cpp_properties.json
+*.recipe
