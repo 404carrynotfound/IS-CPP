@@ -22,7 +22,7 @@ void dec_to_binary(int num)
 
 int main()
 {
-	int lenght, sum = 0, counter = 0, arr[MAX_ARR_SIZE];
+	int lenght, sum = 0, arr[MAX_ARR_SIZE];
 	std::cin >> lenght;
 
 	for (size_t i = 0; i < lenght; i++)
@@ -42,4 +42,3 @@ int main()
 
 	return 0;
 }
-
