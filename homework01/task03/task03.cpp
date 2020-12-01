@@ -75,7 +75,7 @@ void guess()
     }
 }
 
-int easy()
+void easy()
 {
     for (int j = 0; j < 3 + points; j++)
     {
@@ -84,9 +84,8 @@ int easy()
     } 
     std::cout << "Now it's your turn!" << std::endl;
     guess();
-    return 0;
 }
-int medium()
+void medium()
 {
     for (int j = 0; j <= 3 + points; j++)
     {
@@ -95,9 +94,8 @@ int medium()
     }
     std::cout << "Now it's your turn!" << std::endl;
     guess();
-    return 0;
 }
-int hard()
+void hard()
 {
     for (int j = 0; j <= 3 + points; j++)
     {
@@ -106,7 +104,6 @@ int hard()
     }
     std::cout << "Now it's your turn!" << std::endl;
     guess();
-    return 0;
 }
 
 int main()

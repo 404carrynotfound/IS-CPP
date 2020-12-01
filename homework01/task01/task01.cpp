@@ -2,6 +2,13 @@
 #include <string>
 #define MAX_ARR_SIZE 128
 
+enum class order {
+    ASCENDING,
+    DESCENDING
+};
+
+order eval_order(std::string);
+
 int main()
 {
     int arr[MAX_ARR_SIZE], lenght;
@@ -17,7 +24,7 @@ int main()
 
     std::cin >> sort;
 
-    if (sort == "ascending")
+    if (eval_order(sort) == order::ASCENDING)
     {
         for (int i = 0; i < lenght; i++)
         {
@@ -37,7 +44,7 @@ int main()
             std::cout << arr[i] << " ";
         }
     }
-    else if (sort == "descending")
+    else if (eval_order(sort) == order::DESCENDING)
     {
         for (int i = 0; i < lenght; i++)
         {
@@ -64,4 +71,14 @@ int main()
     
 
     return 0;
+}
+
+order eval_order(std::string ord) 
+{
+    if (ord == "ascending") {
+        return order::ASCENDING;
+    }
+    else if (ord == "descending") {
+        return order::DESCENDING;
+    }
 }

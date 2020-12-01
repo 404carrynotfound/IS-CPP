@@ -28,3 +28,4 @@ test01/task01/.vscode/c_cpp_properties.json
 *.recipe
 homework01/.vs/homework01/v16/.suo
 *.4nm~
+*.pdf
